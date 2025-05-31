@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - WanderWorld</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="contact-page">
+  <header class="navbar">
+    <div class="logo">WanderWorld</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? We'd love to hear from you. Fill out the form below and we'll get back to you shortly.</p>
+    
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMessage" class="form-message" style="display: none; color: green; margin-top: 10px;">Message sent successfully!</p>
+    </form>
+  </section>
+
+  <script>
+    // Simple form handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent actual submission
+      document.getElementById('formMessage').style.display = 'block';
+      this.reset(); // reset form fields
+    });
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

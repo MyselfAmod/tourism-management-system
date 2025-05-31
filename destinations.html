@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinations - WanderWorld</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">WanderWorld</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html" class="active">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="card-container">
+
+      <!-- Paris -->
+      <div class="card">
+        <img src="paris.jpg" alt="Eiffel Tower in Paris">
+        <div class="card-content">
+          <h3>Paris</h3>
+          <p>City of love and lights, filled with iconic landmarks and art museums.</p>
+          <p><strong>Price:</strong> $799<br><strong>Duration:</strong> 5 Days<br><strong>Time:</strong> 10:00 AM - 6:00 PM</p>
+          <button onclick="location.href='booking.html?place=Paris'">Book Tour</button>
+        </div>
+      </div>
+
+      <!-- Bali -->
+      <div class="card">
+        <img src="bali.jpg" alt="Beach in Bali">
+        <div class="card-content">
+          <h3>Bali</h3>
+          <p>Enjoy serene beaches, lush forests, and spiritual retreats.</p>
+          <p><strong>Price:</strong> $699<br><strong>Duration:</strong> 4 Days<br><strong>Time:</strong> 9:00 AM - 7:00 PM</p>
+          <button onclick="location.href='booking.html?place=Bali'">Book Tour</button>
+        </div>
+      </div>
+
+      <!-- Switzerland -->
+      <div class="card">
+        <img src="switzerland.jpg" alt="Swiss Alps in Switzerland">
+        <div class="card-content">
+          <h3>Switzerland</h3>
+          <p>Experience the snow-capped Alps and picturesque villages.</p>
+          <p><strong>Price:</strong> $999<br><strong>Duration:</strong> 6 Days<br><strong>Time:</strong> 8:00 AM - 6:00 PM</p>
+          <button onclick="location.href='booking.html?place=Switzerland'">Book Tour</button>
+        </div>
+      </div>
+
+      <!-- New York -->
+      <div class="card">
+        <img src="newyork.jpg" alt="Times Square in New York">
+        <div class="card-content">
+          <h3>New York</h3>
+          <p>Explore the Big Apple's skyscrapers, Broadway, and Central Park.</p>
+          <p><strong>Price:</strong> $849<br><strong>Duration:</strong> 4 Days<br><strong>Time:</strong> 11:00 AM - 8:00 PM</p>
+          <button onclick="location.href='booking.html?place=NewYork'">Book Tour</button>
+        </div>
+      </div>
+
+      <!-- Tokyo -->
+      <div class="card">
+        <img src="tokyo.jpg" alt="Tokyo skyline">
+        <div class="card-content">
+          <h3>Tokyo</h3>
+          <p>Discover futuristic cityscapes, ancient temples, and sushi bars.</p>
+          <p><strong>Price:</strong> $899<br><strong>Duration:</strong> 5 Days<br><strong>Time:</strong> 10:00 AM - 7:00 PM</p>
+          <button onclick="location.href='booking.html?place=Tokyo'">Book Tour</button>
+        </div>
+      </div>
+
+      <!-- Rome -->
+      <div class="card">
+        <img src="rome.jpg" alt="Colosseum in Rome">
+        <div class="card-content">
+          <h3>Rome</h3>
+          <p>Walk through ancient ruins and enjoy rich Italian culture and cuisine.</p>
+          <p><strong>Price:</strong> $759<br><strong>Duration:</strong> 5 Days<br><strong>Time:</strong> 9:30 AM - 6:30 PM</p>
+          <button onclick="location.href='booking.html?place=Rome'">Book Tour</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
